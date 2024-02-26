@@ -1,0 +1,108 @@
+
+/* :root { */
+  /* fonts */
+  /* --serif-display: 'DM Serif Display', 'Georgia', serif;
+  --jost-text: 'Jost', 'Arial', sans-serif; */
+  /* colors */
+  /* --primary-color: #fff;
+  --secondary-color: #292f36;
+  --white-color: #fff;
+  --refresh-color: #fff;
+  --black-color: #000;
+  --shadow-color: rgba(41, 47, 54, 0.2); */
+  /* background colors */
+  /* --white-bg-color: #fff;
+  --dark-bg-color: #292f36;
+  --color--btn: #000;
+} */
+*:focus {
+  outline-offset: 2px;
+}
+body{
+  color: var(--secondary);
+  font-weight: 500;
+  line-height: 1.8;
+  font-family: 'Jost', 'Arial', sans-serif;
+  background-color: rgb(2, 8, 23);
+  transition: all 0.3s ease;
+
+}
+.header{
+  width: 100%;
+  max-width: 1150px;
+  background-color: var(--background);
+  transition: all 0.3s ease;
+}
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 217.2 91.2% 59.8%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 224.3 76.3% 48%;
+}
+.user__item {
+  position: relative;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0rem;
+  text-align: center;
+  box-shadow: 0px 5px 10px 2px var(--shadow-color);
+}
+
+.hidden {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+}
+
+.lds-ring div {
+  padding-bottom: 15rem;
+  box-sizing: border-box;
+  display: block;
+  margin: 8px;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: 5s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
